@@ -14,7 +14,7 @@ def portfolio():
 def kangaroos():
     return render_template("kangaroos.html")
 
-@app_projects.route('/walruses/')
+@app_projects.route('/arnav/')
 def walruses():
     return render_template("walruses.html")
 
