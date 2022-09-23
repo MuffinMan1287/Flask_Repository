@@ -2,15 +2,48 @@
 {% extends "layouts/base.html" %}
 
 <!-- This variable sets name of browser tab  -->
-{% set project = "stubby" %}
+{% set project = "NotStub" %}
 
 <!- This is a replacement block for Body in base.html -->
 {% block body %}
     <!- Try building a new body here, bootstrap is a wise choice ->
     <div class="px-5 py-5 mx-auto">
-        <h1 class="text-primary"><strong>Stubby Body</strong></h1>
-        <p class="text-secondary">Arnav Kanekar</p>
+        <h1 class="text-primary"><strong>Not Stub</strong></h1>
+        <p class="text-info">This is not stub. I have changed the stub. Also, the color change represents information.</p>
     </div>
+    <div class="px-5 py-5 mx-auto">
+        <h1 class="text-primary"><strong>Cool Table</strong></h1>
+        <p class="text-secondary">You can hover over this table to highlight the row!</p>
+        <table class="table table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th>Word</th>
+                    <th>Meaning</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Among</td>
+                    <td>surrounded by; in the company of</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>Computer</td>
+                    <td>sa machine or device that performs processes, calculations and operations based on instructions provided by a software or hardware program</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>Sanctify</td>
+                    <td>set apart as or declare holy; consecrate</td>
+                </tr>
+            </tbody>
+            
+
+        </table>
+    </div>
+    <img src="{{ url_for('static', filename='assets/jeep.jpeg') }}" class="img-thumbnail mx-auto d-block" alt="Snowy Night">
 {% endblock %}
 
 <!- This is turning off birds background from base.html -->
